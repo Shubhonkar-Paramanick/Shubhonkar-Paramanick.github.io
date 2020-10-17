@@ -90,7 +90,7 @@
 							<div class="content">
 								<!--h2>Contact</h2-->
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<!--form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -102,7 +102,7 @@
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<!--textarea name="message" id="message" rows="4"></textarea-->&nbsp;&nbsp;&nbsp;
+											<textarea name="message" id="message" rows="4"></textarea>&nbsp;&nbsp;&nbsp;
 											<textarea style="resize:none" name="name" cols="6" rows="4"></textarea>&nbsp;&nbsp;&nbsp;
 										</div>
 									</div>
@@ -110,12 +110,13 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
-								<form action="https://formspree.io/f/{form_id}" method="post">
-                                                                  <label for="email">Your Email</label>
-                                                                  <input name="Email" id="email" type="email">
-                                                                  <button type="submit">Submit</button>
-                                                                </form>
+								</form--->
+								<form action="https://formspree.io/f/maylegye" method="POST">
+                						  <input type="hidden" name="_subject" value="Contact request from personal website" />
+                						  <input type="email" name="_replyto" placeholder="Your email" required>
+               						 	  <textarea name="message" placeholder="Type your message" required></textarea>
+                						  <button type="submit">Send</button>
+            						        </form>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
