@@ -3130,14 +3130,6 @@
 
 /* Page Wrapper + Menu */
 
-#m {
-  border: 2px solid;
-  padding: 20px; 
-  width: 300px;
-  resize: both;
-  overflow: auto;
-}
-
 	#page-wrapper {
 		-moz-transition: opacity 0.5s ease;
 		-webkit-transition: opacity 0.5s ease;
