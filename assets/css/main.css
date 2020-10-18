@@ -1693,7 +1693,7 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
-		textarea:invalid {
+		textarea:focus {
 			box-shadow: none;
 		}
 
