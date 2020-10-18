@@ -1673,7 +1673,7 @@
 	input[type="email"],
 	select,
 	textarea {
-		resize: none;
+		/*resize: none;*/
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
