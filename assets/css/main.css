@@ -1693,7 +1693,7 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
-		textarea:focus {
+		textarea:invalid {
 			box-shadow: none;
 		}
 
@@ -1701,8 +1701,8 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		select:focus,
-		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+		textarea:focus /*{
+			box-shadow: 0 0 0 2px #21b2a6*/;
 		}
 
 	.select-wrapper {
