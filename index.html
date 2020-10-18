@@ -114,20 +114,22 @@
 								</form-->
 		
 								<form action="https://formspree.io/f/maylegye" method="POST" enctype="multipart/form-data">
-  								<label>
+  								<!--label>
 								  Name	
-								  <input type="text" name="_replyto" required>	
-								</label>	
+								  <input type="text" name="name" required="">	
+								</label-->
+								<label for="full-name">Full Name</label>
+								<input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required="">
 								<label>
 								  Email
-    								  <input type="text" name="_replyto" required>
+    								  <input type="text" name="_replyto" required="">
   								</label>
 								<label>
 								  Your Message:
-								  <textarea style="resize:vertical" name="message" placeholder="Type your message" required></textarea>
+								  <textarea style="resize:vertical" name="message" placeholder="Type your message" required=""></textarea>
 								</label>
   								<label>
-    								  Your file:
+    								  Upload File:
     								  <input type="file" name="upload">
   								</label>
 									
