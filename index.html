@@ -14,32 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
-		
-		
-		<script type="text/javascript">
-        window.addEventListener("load", function () {
-            var chat = document.getElementById('txtChatMessage'); // get textarea
-
-            chat.addEventListener('keydown', function (event) { //add listener keydown for textarea
-
-                event = event || window.event;
-
-                if (event.keyCode === 13) {  //return pressed?
-                    event.preventDefault();
-                    if (this.selectionStart != undefined) {
-                        var startPos = this.selectionStart;
-                        var endPos = this.selectionEnd;
-                        var selectedText = this.value.substring(startPos, endPos);
-                        alert("Hello, you've selected " + selectedText);
-                    }
-                }
-                
-            })
-        });
-    </script>
-		
-		
+			
 	</head>
 	<body class="landing">
 
@@ -141,12 +116,11 @@
 								<form action="https://formspree.io/f/maylegye" method="POST" enctype="multipart/form-data">
   								<label>
 								  Your email:
-    								  <input type="text" name="_replyto">
+    								  <input type="text" name="_replyto" required>
   								</label>
 								<label>
 								  Your Message:
 								  <textarea style="resize:vertical" name="message" placeholder="Type your message" required></textarea>
-								  <textarea id="txtChatMessage" cols="40" rows="10"></textarea>
 								</label>
   								<label>
     								  Your file:
